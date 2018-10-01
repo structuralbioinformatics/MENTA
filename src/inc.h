@@ -4,9 +4,9 @@
 #include        <string.h>
 #include        <sys/types.h>
 #include        <malloc.h>
-#define         MAXS  500   /* minimum 300 */
-#define         MAXG 100   
-#define         DIM  1000
+#define         MAXS  2000   /* minimum 300 */
+#define         MAXG 1000   
+#define         DIM  5000
 #define         MAXV  15.0 
 #define         MAXVG 100.0 
 #define         MAXL  100.0

@@ -65,4 +65,63 @@ PARAMETERS
 	 -l 	 Local Mode      
 	 -h 	 Print help 
 
+============================================================
+
+EXAMPLE:
+
+GO TO "example" folder, where it contains the sequence and profile files required to run the example
+
+1) Align and create local motif profiles using single sequences
+
+We assume you have installed SABLE and the program runs as run.sable.
+The output of SABLE is "input_fasa"+SABLE.out (i.e run.sable src8.fa produces src8.faSABLE.out)
+
+SABLE/run.sable src8.fa  
+perl ../perl/SABLE2Menta.pl -i src8.faSABLE.out -f src8 -m ../matrix/Mizuguchi.dat  -o src8
+SABLE/run.sable ubx8.fa
+perl ../perl/SABLE2Menta.pl -i ubx8.faSABLE.out -f ubx8 -m ../matrix/Mizuguchi.dat  -o ubx8
+SABLE/run.sable faf1.fa
+perl ../perl/SABLE2Menta.pl -i faf1.faSABLE.out -f faf1 -m ../matrix/Mizuguchi.dat  -o faf1
+
+cat src8.menta > iMotif.menta
+cat ubx8.menta >> iMotif.menta
+cat faf1.menta >> iMotif.menta
+
+echo " 0.80          ../matrix/blosumG.dat" > matrix.data
+echo " 0.10          ../matrix/blosum.dat" >> matrix.data
+echo " 0.10          ../matrix/pam.dat"    >> matrix.data
+
+echo " 14.0" > input_method_WJ.dat
+echo " 14.0" >> input_method_WJ.dat
+echo " 14.0" >> input_method_WJ.dat
+echo " 14.0" >> input_method_WJ.dat
+echo "  0.0" >> input_method_WJ.dat
+echo "  0.0" >> input_method_WJ.dat
+echo "  0.0" >> input_method_WJ.dat
+echo "  0.0" >> input_method_WJ.dat
+echo " 14.0" >> input_method_WJ.dat
+echo "  0.0" >> input_method_WJ.dat
+echo " 14.0" >> input_method_WJ.dat
+echo "  0.0" >> input_method_WJ.dat
+echo " 14.0" >> input_method_WJ.dat
+
+
+../bin/menta -i iMotif.menta -w matrix.data -wj input_method_WJ.dat -n 10  -fmt 10 -j 0 -s -100.0 -id 0.3 -homo 0.9 -gid 0.5 -ghom 0.9 -cluster 20 -l -evd 1 -op 4  -o test_iMotif.out > test_iMotif.log
+
+sed -e "s/0.00000/0.25000/g" iMotif.menta > iMotif_ss.menta
+
+../bin/menta -i iMotif_ss.menta -w matrix.data -wj input_method_WJ.dat -n 10  -fmt 10 -j 0 -s -100.0 -id 0.3 -homo 0.9 -gid 0.5 -ghom 0.9 -cluster 20 -l -evd 1 -op 4  -o test_iMotif_ss.out > test_iMotif_ss.log
+
+
+
+2) Use HSSP files to create two profiles and compare them
+
+perl ../perl/HSSP2MEntA.pl -i 1aw0.hssp -m ../matrix/Mizuguchi.dat -w 0.5 -o 1aw0
+perl ../perl/HSSP2MEntA.pl -i 1kdc.hssp -m ../matrix/Mizuguchi.dat -w 0.5 -o 1kdc
+
+cat 1aw0_0.menta > test_1aw0_1kdc.menta
+sed -e "s/>M1/>M2/g" 1kdc_0.menta >> test_1aw0_1kdc.menta
+
+../bin/menta -i test_1aw0_1kdc.menta  -w matrix.data -wj input_method_WJ.dat -n 10  -fmt 10 -j 0 -s -100.0 -id 0.3 -homo 0.9 -gid 0.5 -ghom 0.9 -cluster 20 -g -evd 1 -op 4  -o test_HSSP.out >  test_HSSP.log
+
 

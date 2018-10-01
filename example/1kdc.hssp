@@ -1,0 +1,361 @@
+HSSP       HOMOLOGY DERIVED SECONDARY STRUCTURE OF PROTEINS , VERSION 1.0 1991
+PDBID      1kdc
+DATE       file generated on 26-Sep-00
+SEQBASE    RELEASE  0.0 OF EMBL/SWISS-PROT WITH ****** SEQUENCES
+PARAMETER  SMIN: -0.5  SMAX:  1.0
+PARAMETER  gap-open:  3.0 gap-elongation:  0.1
+PARAMETER  conservation weights: YES
+PARAMETER  InDels in secondary structure allowed: YES
+PARAMETER  alignments sorted according to :DISTANCE
+THRESHOLD  according to: t(L)=(290.15 * L ** -0.562) +  5
+REFERENCE  Sander C., Schneider R. : Database of homology-derived protein structures. Proteins, 9:56-68 (1991).
+CONTACT    e-mail (INTERNET) Schneider@EMBL-Heidelberg.DE or Sander@EMBL-Heidelberg.DE / fax +49-6221-387306
+AVAILABLE  Free academic use. Commercial users must apply for license.
+AVAILABLE  No inclusion in other databanks without permission.
+HEADER     HYDROLASE (PHOSPHORIC DIESTER)
+COMPND     STAPHYLOCOCCAL NUCLEASE (E.C.3.1.31.1) MUTANT WITH LYS 116
+SOURCE     (STAPHYLOCOCCUS AUREUS) FOGGI STRAIN EXPRESSED IN
+AUTHOR     A.HODEL,R.O.FOX
+SEQLENGTH   136
+NCHAIN        1 chain(s) in 1kdc data set
+NALIGN       16
+NOTATION : ID: EMBL/SWISSPROT identifier of the aligned (homologous) protein
+NOTATION : STRID: if the 3-D structure of the aligned protein is known, then STRID is the Protein Data Bank identifier as taken
+NOTATION : from the database reference or DR-line of the EMBL/SWISSPROT entry
+NOTATION : %IDE: percentage of residue identity of the alignment
+NOTATION : %SIM (%WSIM):  (weighted) similarity of the alignment
+NOTATION : IFIR/ILAS: first and last residue of the alignment in the test sequence
+NOTATION : JFIR/JLAS: first and last residue of the alignment in the alignend protein
+NOTATION : LALI: length of the alignment excluding insertions and deletions
+NOTATION : NGAP: number of insertions and deletions in the alignment
+NOTATION : LGAP: total length of all insertions and deletions
+NOTATION : LSEQ2: length of the entire sequence of the aligned protein
+NOTATION : ACCNUM: SwissProt accession number
+NOTATION : PROTEIN: one-line description of aligned protein
+NOTATION : SeqNo,PDBNo,AA,STRUCTURE,BP1,BP2,ACC: sequential and PDB residue numbers, amino acid (lower case = Cys), secondary
+NOTATION : structure, bridge partners, solvent exposure as in DSSP (Kabsch and Sander, Biopolymers 22, 2577-2637(1983)
+NOTATION : VAR: sequence variability on a scale of 0-100 as derived from the NALIGN alignments
+NOTATION : pair of lower case characters (AvaK) in the alignend sequence bracket a point of insertion in this sequence
+NOTATION : dots (....) in the alignend sequence indicate points of deletion in this sequence
+NOTATION : SEQUENCE PROFILE: relative frequency of an amino acid type at each position. Asx and Glx are in their
+NOTATION : acid/amide form in proportion to their database frequencies
+NOTATION : NOCC: number of aligned sequences spanning this position (including the test sequence)
+NOTATION : NDEL: number of sequences with a deletion in the test protein at this position
+NOTATION : NINS: number of sequences with an insertion in the test protein at this position
+NOTATION : ENTROPY: entropy measure of sequence variability at this position
+NOTATION : RELENT: relative entropy, i.e.  entropy normalized to the range 0-100
+NOTATION : WEIGHT: conservation weight
+
+## PROTEINS : EMBL/SWISSPROT identifier and alignment statistics
+  NR.    ID         STRID   %IDE %WSIM IFIR ILAS JFIR JLAS LALI NGAP LGAP LSEQ2 ACCNUM     PROTEIN
+    1 : nuc_staau   1A3V    0.99  1.00    1  136   88  223  136    0    0  231  P00644     (STAPHYLOCOCCAL NUCLEASE).
+    2 : P94492              0.56  0.66    8  136   69  196  128    1    1  211  P94492     YNCB.
+    3 : O64020              0.53  0.63    1  136   64  198  135    1    1  296  O64020     PUTATIVE DNASE/RNASE ENDONUCLEASE.
+    4 : nuc_stahy           0.41  0.51    1  136   36  168  133    3    3  169  P43270     (STAPHYLOCOCCAL NUCLEASE).
+    5 : nuc_stain           0.39  0.48    2  136   36  167  132    3    3  168  P43269     (STAPHYLOCOCCAL NUCLEASE).
+    6 : O26594              0.39  0.45   11  109   74  162   89    3   10  173  O26594     THERMONUCLEASE PRECURSOR.
+    7 : Q9X397              0.39  0.50    2  136   63  196  134    1    1  214  Q9X397     PXO1-141.
+    8 : O58971              0.38  0.40    1  136   28  174  133    5   17  176  O58971     176AA LONG HYPOTHETICAL THERMONUCLEASE.
+    9 : ye39_metja          0.35  0.42    9  136   59  203  125    3   23  207  Q58834     HYPOTHETICAL PROTEIN MJ1439.
+   10 : Q9UZT7              0.35  0.41    3  136   29  173  132    3   15  175  Q9UZT7     THERMONUCLEASE PRECURSOR (EC 3.1.31.1).
+   11 : yfi3_ecoli          0.34  0.38    9  136   25  139  114    4   15  153  Q99342     HYPOTHETICAL 15.6 KDA PROTEIN IN FINO 3'R
+   12 : O82923              0.34  0.38    9  136   25  139  114    4   15  153  O82923     HYPOTHETICAL 15.6 KDA PROTEIN IN FINO 3'R
+   13 : Q19328              0.34  0.31    1  136  531  667  124    6   25  914  Q19328     SIMILAR TO HUMAN 100 KDA COACTIVATOR.
+   14 : O66926              0.34  0.33    6  135   22  166  127    5   21  172  O66926     THERMOCOCCAL NUCLEASE HOMOLOG.
+   15 : pab4_ecoli          0.31  0.35    8  136  135  260  117    4   21  281  P22997     PARB PROTEIN.
+   16 : y38k_corse          0.30  0.29    1  136  142  320  122    4   71  338  Q39635     HYPOTHETICAL 38.1 KDA PROTEIN.
+## ALIGNMENTS    1 -   16
+ SeqNo  PDBNo AA STRUCTURE BP1 BP2  ACC NOCC  VAR  ....:....1....:....2....:....3....:....4....:....5....:....6....:....7
+     1    6   K              0   0  257    7   35  K KN   Q    E  E
+     2    7   L        -     0   0   48    9   43  L KAV LS    F  L
+     3    8   H        -     0   0  110   10   45  H ENR EK K  L  H
+     4    9   K  E     -A   70   0A  93   10   46  K LEG TE E  S  T
+     5   10   E  E     -A   69   0A  22   10   47  E VQE VL L  G  L
+     6   11   P  E     +A   68   0A 108   11   43  P DTS KH H  GP P
+     7   12   A  E     -A   67   0A  11   11   47  A VYY GG G  SC V
+     8   13   T  E     -B   21   0A  93   13   41  TTTKL KK K  RKED
+     9   14   L  E     +B   20   0A  44   16   13  LLLVV VVVVVVLVVV
+    10   15   I  E     -     0   0   76   16   39  IDDIK LIVVVVRVVK
+    11   16   K  E     -B   19   0A 123   17   32  KRRRRHHKKKRRIRRA
+    12   17   A  E     +B   18   0A   9   17   28  AAAVVVIVVVVVYVIV
+    13   18   I        -     0   0   42   17   24  IIVIIVKVVVLLIVIA
+    14   19   D  S    S-     0   0    5   17    7  DDDDDDDDDDDDPDDD
+    15   20   G  S    S+     0   0    0   17    9  GGGGGGGGGGGGKGGG
+    16   21   D  S    S+     0   0    6   17    3  DDDDDDDDDDDDEDDD
+    17   22   T  E     + C   0  30A  10   17    0  TTTTTTTTTTTTTTTT
+    18   23   V  E     -BC  12  29A   1   17   13  VIIIIIILVVIIVFIV
+    19   24   K  E     +BC  11  28A  81   17   53  KKKIIDDYYYEELRDT
+    20   25   L  E     -BC   9  27A   0   17   15  LVVVIVVVVVVVICVV
+    21   26   M  E     -BC   8  26A  76   16   50  MITDDENKEKMM.VLY
+    22   27   Y  E >   - C   0  25A  26   16   54  YYYKKGVlVlDD.PVV
+    23   28   K  T 3  S-     0   0  161   16   37  KNNDDVKdNnSS.EDN
+    24   29   G  T 3  S+     0   0   68   16   27  GGGGGGGGGGRR.GKT
+    25   30   Q  E <   -C   22   0A 114   16   31  QKNKQRQEEEKK.KQE
+    26   31   P  E     +C   21   0A  68   15   48  PKVQD.KVLTAA.sPd
+    27   32   M  E     -C   20   0A  36   15   51  MDDQE.QVWVVV.iVy
+    28   33   T  E     -C   19   0A  40   16   36  TTTNR.TKKKRRTKRR
+    29   34   F  E     -Cd  18  83A   0   17   20  FVVLVIVVIVIIFVVI
+    30   35   R  E     -Cd  17  84A  34   17   10  RRRRRRRRRRRRLRRR
+    31   36   L  E >   - d   0  85A   1   17   11  LYYMLLLLLLLLLLLL
+    32   37   L  T 3  S+     0   0   11   17   30  LLLIIVLVLIVVGMVR
+    33   38   L  T 3  S+     0   0   14   17   42  LLLGGGLGGGNNGGDG
+    34   39   V  E <   -H  106   0B   0   17   10  VVIVVVLVVIIIIIII
+    35   40   D  E     -H  105   0B  77   17    7  DDDDDNDDDDDDNDDD
+    36   41   T        -     0   0    9   17   27  TTTTTTTATAAACTAS
+    37   42   P        -     0   0   12   17    8  PPPPPPPPPPPPPLPP
+    38   43   E        -     0   0   41   17    6  EEEEEEEEEEEEKEEE
+    39   44   T  S    S+     0   0   34   17   45  TTTTTRSLILKKGTKS
+    40   45   K  S    S+     0   0  125   17   46  KKKVVGVeHeKKANRS
+    41   46   H  B  >  -I   45   0C  48   15   40  HKKKKQShKh..RNQM
+    42   47   P  T  4 S+     0   0  125   15   39  PPPPPPQNRN..VMAP
+    43   48   K  T  4 S+     0   0  183   13   42  KNNNNGKMnL..GK..
+    44   49   K  T  4 S-     0   0  122   13   46  KSSTTYITkS..PK..
+    45   50   G  B  <  +I   41   0C  27   12   41  GCCPP.PCYC..gg..
+    46   51   V  S    S-     0   0   99   12   28  VVVVV.PLLL..av..
+    47   52   E    >   -     0   0   48   14   35  EQQQQ.QIKVQQEK..
+    48   53   K  T 3  S+     0   0  157   14   38  KPPPP.KKEKDDPE..
+    49   54   Y  T 3> S+     0   0   40   16   10  YYYYY.MYWYYYFFFF
+    50   55   G  H <> S+     0   0    0   16    5  GGGGG.GGGGGGAGGG
+    51   56   P  H  > S+     0   0   64   17   45  PEEKKRKEYYRRDKEK
+    52   57   E  H  > S+     0   0   95   17   48  EDDEAEELKIWWEKRE
+    53   58   A  H  X S+     0   0    0   17    9  AAAAAAAAAASSAAAA
+    54   59   S  H  X S+     0   0   26   17   36  SSSSSKSKKKTTAKRK
+    55   60   A  H  X S+     0   0   56   17   41  AKKDNDFEHEDDAEQE
+    56   61   F  H  X S+     0   0   45   17   37  FRRFFFFFFFMMFFAE
+    57   62   T  H  X S+     0   0    0   17   44  TNNTTVLLALMMTSLL
+    58   63   K  H  X S+     0   0   91   17   22  KKKKKKKKEKKKRKAI
+    59   64   K  H  X S+     0   0  120   17   36  KEERKSKNKNSSKRGK
+    60   65   M  H  < S+     0   0   24   17   34  MLLHHMQIEYLLLLML
+    61   66   V  H >< S+     0   0    4   17   26  VVVLLCLTLTVVVIVV
+    62   67   E  H 3< S+     0   0   94   15   50  E..TTLDLKLAALDFV
+    63   68   N  T 3< S+     0   0  118   16   31  NNNNNGGGNGGGQ.RG
+    64   69   A    <   -     0   0   25   11   41  ASS.....KKKKH.RK
+    65   70   K  S    S+     0   0  187   16   45  KGGQQRKKTDTT.KHC
+    66   71   K        -     0   0  143   16   45  KKKKRTSSVVVV.KVL
+    67   72   I  E     -AE   7  89A  16   16   30  ILLVVVVVITTT.VLT
+    68   73   E  E     -AE   6  88A  52   17   48  EQQRRQTTILVVEVVV
+    69   74   V  E     -AE   5  87A   0   17   39  VLLLLLLLVITTVYDH
+    70   75   E  E     -AE   4  86A  10   17   47  EEEEEDVEFFYYQLEI
+    71   76   F  E     - E   0  85A  15   17   39  FFFYYIYFDDFFLEKY
+    72   77   D        -     0   0    2   17   26  DDDDDDDDNSQQELDE
+    73   78   K  S    S+     0   0  116   16   44  KKKKRDQSEIRRVP.E
+    74   79   G  S    S-     0   0   18   10   37  GGG..AGIAQ...V..
+    75   80   Q        -     0   0  111   13   37  QDDQEKPqPG..ER..
+    76   81   R  S    S+     0   0  123   13   30  RRREPRKrKR..SK..
+    77   82   T  B    S-F   83   0A  72   14   40  TRRKKHEKKK..TMT.
+    78   83   D    >   -     0   0   33   17    0  DDDDDDDDDDDDDDDD
+    79   84   K  T 3  S+     0   0  172   17   17  KKKRKRKKKKRRKNRR
+    80   85   Y  T 3  S-     0   0  164   17   15  YYYYYYYYYYYYNNYY
+    81   86   G  S <  S+     0   0   47   17    0  GGGGGGGGGGGGGGGG
+    82   87   R        -     0   0   63   17    7  RRRRRRRRRRRRNRRR
+    83   88   G  E     -dF  29  77A   0   17   48  GLLTTVKLYLIMFYTS
+    84   89   L  E     +d   30   0A  26   17    7  LLLLLLLLLLLLVLLV
+    85   90   A  E     -dE  31  71A   0   17   19  AAAAAAAVAAGGGAGG
+    86   91   Y  E     - E   0  70A   0   17   37  YYYYYVYYYYQQYYTD
+    87   92   I  E     - E   0  69A   1   17   14  IVVVVVVMILVVLVVI
+    88   93   Y  E     -GE  93  68A  18   17    6  YYYWWYFYFYYYYWWY
+    89   94   A  E >  S-GE  92  67A   5   17   37  AVVLLVCLIIaaVLVC
+    90   95   D  T 3  S-     0   0   55   17   24  DDDGGDNNNNddSDNN
+    91   96   G  T 3  S+     0   0   50   17   29  GGGKDGGGNGGGPeMG
+    92   97   K  E <   -G   89   0A 129   17   46  KKKEEVITsTMMdkEQ
+    93   98   M  E  >  -G   88   0A  17   17   48  MSSMMNHDnDNNnMlF
+    94   99   V  H  > S+     0   0    1   17   21  VVVFFLIIFVVVLLvI
+    95  100   N  H  > S+     0   0    0   17   18  NQQNNNNNNNNNSNNQ
+    96  101   E  H  > S+     0   0   41   17   35  EEEEVREAEAQQELAE
+    97  102   A  H  X S+     0   0   14   17   50  ATTKKELEEEFFALAK
+    98  103   L  H  <>S+     0   0    0   17    3  LLLLLLMLLLMMLLMM
+    99  104   V  H ><5S+     0   0    0   17   26  VLLAALAILVVVVVVL
+   100  105   R  H 3<5S+     0   0   73   17   22  RKKKKRKKKKRREKHK
+   101  106   Q  T 3<5S-     0   0   82   17   47  QEEEERSMYMAANEQK
+   102  107   G  T < 5S+     0   0    0   17    0  GGGGGGGGGGGGGGGG
+   103  108   L  S   <S+     0   0    8   17   27  LLLLLYYFYLAALLML
+   104  109   A        -     0   0    0   17    4  AAAAAAGAAAAAAAAA
+   105  110   K  E     -H   35   0B 102   17   33  KRRRREIRRRWWSFWW
+   106  111   V  E     -H   34   0B  11   17   27  VVVAAVIVVVVVLVAH
+   107  112   A        -     0   0   12   15   51  AAAKKMAF.FYYH.YY
+   108  113   Y        -     0   0  234   16   35  YYYFFYYY.YEEFFRT
+   109  114   V        +     0   0   21   14   46  VVV..IIE.EQQTIFA
+   110  115   Y        +     0   0  208   16   36  YYYYY FKYKYYAIHY
+   111  116   N  S    S-     0   0   46   16   44  KEERP KRIKNNEPGD
+   112  117   P  S    S+     0   0   59   16   44  PPPPP PFSFTTRPRK
+   113  118   N        +     0   0    1   16   32  NNNNN NENDDDSQAR
+   114  119   N    >   +     0   0   54   15   52  NTTYD TKFKPPGVA.
+   115  120   T  T 3  S+     0   0   63   14   45  TKKKK TIEIVV.KD.
+   116  121   H  T 3> S+     0   0   39   13   50  HYYYY LKLK..HYP.
+   117  122   E  H <> S+     0   0   38   13   50  EIIQR LEKE..YLE.
+   118  123   Q  H  > S+     0   0  118   11   42  QDDEI P.D...NK.P
+   119  124   H  H  > S+     0   0   87   11   40  HQQRL E.E...AE.Q
+   120  125   L  H  X S+     0   0    0   16   20  LFFII MYFYLLLLML
+   121  126   R  H  X S+     0   0   79   16   52  RRKEE LSLSPPLGLS
+   122  127   K  H  X S+     0   0  147   16   45  KLKQQ EKNEVVSERK
+   123  128   S  H  X S+     0   0   12   16   48  SDDAA ALVLLLAALW
+   124  129   E  H  X S+     0   0   16   16   14  EEEQQ EEEEQQEQEE
+   125  130   A  H  X S+     0   0   47   16   38  AQQKK KDRDNNNEQE
+   126  131   Q  H  X S+     0   0   64   16   21  QEEQE EDEEEEKEEK
+   127  132   A  H  <>S+     0   0    0   16    0  AAAAA AAAAAAAAAA
+   128  133   K  H ><5S+     0   0   90   16   29  KKKQQ KRKRRRKYRR
+   129  134   K  H 3<5S+     0   0  142   16   36  KSSKK EKEKQQKKGA
+   130  135   E  T 3<5S-     0   0   87   16   44  EDELK ARNRQQADKA
+   131  136   K  T < 5 -     0   0  144   16   17  KKKKQ KRRRKKKRRR
+   132  137   L    > < -     0   0   46   16   45  LLLKL ALVQRRKRVV
+   133  138   N  G >  S+     0   0   51   16   26  NSSNN GNGNGGNGGG
+   134  139   I  G 3  S+     0   0   51   16   17  IIIII VLLLLLIFLL
+   135  140   W  G <         0   0   51   16    0  WWWWW WWWWWWWWWW
+   136  141   S    <         0   0   95   15   22  SSSSE SSNSSSA SA
+## SEQUENCE PROFILE AND ENTROPY
+ SeqNo PDBNo   V   L   I   M   F   W   Y   G   A   P   S   T   C   H   R   K   Q   E   N   D  NOCC NDEL NINS ENTROPY RELENT WEIGHT
+    1    6     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0  43  14  29  14   0     7    0    0   1.277     66  0.91
+    2    7    11  44   0   0  11   0   0   0  11   0  11   0   0   0   0  11   0   0   0   0     9    0    0   1.581     72  0.70
+    3    8     0  10   0   0   0   0   0   0   0   0   0   0   0  30  10  20   0  20  10   0    10    0    0   1.696     74  0.70
+    4    9     0  10   0   0   0   0   0  10   0   0  10  20   0   0   0  20   0  30   0   0    10    0    0   1.696     74  0.70
+    5   10    20  30   0   0   0   0   0  10   0   0   0   0   0   0   0   0  10  30   0   0    10    0    0   1.505     65  0.70
+    6   11     0   0   0   0   0   0   0   9   0  36   9   9   0  18   0   9   0   0   0   9    11    0    0   1.768     74  0.69
+    7   12    18   0   0   0   0   0  18  27  18   0   9   0   9   0   0   0   0   0   0   0    11    0    0   1.720     72  0.69
+    8   13     0   8   0   0   0   0   0   0   0   0   0  31   0   0   8  38   0   8   0   8    13    0    0   1.519     59  0.79
+    9   14    69  31   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0    16    0    0   0.621     22  1.30
+   10   15    38   6  25   0   0   0   0   0   0   0   0   0   0   0   6  13   0   0   0  13    16    0    0   1.581     57  0.88
+   11   16     0   0   6   0   0   0   0   0   6   0   0   0   0  12  47  29   0   0   0   0    17    0    0   1.300     46  1.03
+   12   17    59   0  12   0   0   0   6   0  24   0   0   0   0   0   0   0   0   0   0   0    17    0    0   1.071     38  0.90
+   13   18    35  12  41   0   0   0   0   0   6   0   0   0   0   0   0   6   0   0   0   0    17    0    0   1.318     47  1.19
+   14   19     0   0   0   0   0   0   0   0   0   6   0   0   0   0   0   0   0   0   0  94    17    0    0   0.224      8  1.36
+   15   20     0   0   0   0   0   0   0  94   0   0   0   0   0   0   0   6   0   0   0   0    17    0    0   0.224      8  1.34
+   16   21     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   6   0  94    17    0    0   0.224      8  1.50
+   17   22     0   0   0   0   0   0   0   0   0   0   0 100   0   0   0   0   0   0   0   0    17    0    0   0.000      0  1.57
+   18   23    35   6  53   0   6   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0    17    0    0   1.038     37  1.34
+   19   24     0   6  12   0   0   0  18   0   0   0   0   6   0   0   6  24   0  12   0  18    17    0    0   1.956     69  0.67
+   20   25    71  12  12   0   0   0   0   0   0   0   0   0   6   0   0   0   0   0   0   0    17    0    0   0.916     32  1.27
+   21   26     6   6   6  25   0   0   6   0   0   0   0   6   0   0   0  13   0  13   6  13    16    1    0   2.166     78  0.69
+   22   27    25  13   0   0   0   0  25   6   0   6   0   0   0   0   0  13   0   0   0  13    16    1    2   1.820     66  0.67
+   23   28     6   0   0   0   0   0   0   0   0   0  13   0   0   0   0  19   0   6  31  25    16    1    0   1.630     59  0.79
+   24   29     0   0   0   0   0   0   0  75   0   0   0   6   0   0  13   6   0   0   0   0    16    1    0   0.822     30  1.00
+   25   30     0   0   0   0   0   0   0   0   0   0   0   0   0   0   6  31  31  25   6   0    16    1    0   1.420     51  0.91
+   26   31    13   7   0   0   0   0   0   0  13  20   7   7   0   0   0  13   7   0   0  13    15    2    2   2.119     78  0.67
+   27   32    33   0   7  13   0   7   7   0   0   0   0   0   0   0   0   0  13   7   0  13    15    2    0   1.894     70  0.67
+   28   33     0   0   0   0   0   0   0   0   0   0   0  38   0   0  31  25   0   0   6   0    16    1    0   1.251     45  0.84
+   29   34    47   6  29   0  18   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0    17    0    0   1.187     42  1.11
+   30   35     0   6   0   0   0   0   0   0   0   0   0   0   0   0  94   0   0   0   0   0    17    0    0   0.224      8  1.29
+   31   36     0  82   0   6   0   0  12   0   0   0   0   0   0   0   0   0   0   0   0   0    17    0    0   0.578     20  1.36
+   32   37    29  35  18   6   0   0   0   6   0   0   0   0   0   0   6   0   0   0   0   0    17    0    0   1.534     54  1.04
+   33   38     0  29   0   0   0   0   0  53   0   0   0   0   0   0   0   0   0   0  12   6    17    0    0   1.115     39  0.68
+   34   39    47   6  47   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0    17    0    0   0.876     31  1.37
+   35   40     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0  12  88    17    0    0   0.362     13  1.44
+   36   41     0   0   0   0   0   0   0   0  29   0   6  59   6   0   0   0   0   0   0   0    17    0    0   1.005     35  1.05
+   37   42     0   6   0   0   0   0   0   0   0  94   0   0   0   0   0   0   0   0   0   0    17    0    0   0.224      8  1.49
+   38   43     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   6   0  94   0   0    17    0    0   0.224      8  1.39
+   39   44     0  12   6   0   0   0   0   6   0   0  12  41   0   0   6  18   0   0   0   0    17    0    0   1.675     59  0.73
+   40   45    18   0   0   0   0   0   0   6   6   0   6   0   0   6   6  35   0  12   6   0    17    0    2   1.925     68  0.73
+   41   46     0   0   0   7   0   0   0   0   0   0   7   0   0  27   7  33  13   0   7   0    15    2    0   1.709     63  0.78
+   42   47     7   0   0   7   0   0   0   0   7  53   0   0   0   0   7   0   7   0  13   0    15    2    0   1.507     56  0.72
+   43   48     0   8   0   8   0   0   0  15   0   0   0   0   0   0   0  31   0   0  38   0    13    4    1   1.413     55  0.70
+   44   49     0   0   8   0   0   0   8   0   0   8  23  23   0   0   0  31   0   0   0   0    13    4    0   1.631     64  0.68
+   45   50     0   0   0   0   0   0   8  33   0  25   0   0  33   0   0   0   0   0   0   0    12    5    2   1.286     52  0.67
+   46   51    58  25   0   0   0   0   0   0   8   8   0   0   0   0   0   0   0   0   0   0    12    5    0   1.075     43  0.89
+   47   52     7   0   7   0   0   0   0   0   0   0   0   0   0   0   0  14  50  21   0   0    14    3    0   1.332     50  0.89
+   48   53     0   0   0   0   0   0   0   0   0  36   0   0   0   0   0  36   0  14   0  14    14    3    0   1.291     49  0.83
+   49   54     0   0   0   6  25   6  63   0   0   0   0   0   0   0   0   0   0   0   0   0    16    1    0   0.987     36  1.37
+   50   55     0   0   0   0   0   0   0  94   6   0   0   0   0   0   0   0   0   0   0   0    16    1    0   0.234      8  1.44
+   51   56     0   0   0   0   0   0  12   0   0  12   0   0   0   0  18  29   0  24   0   6    17    0    0   1.677     59  0.67
+   52   57     0   6   6   0   0  12   0   0   6   0   0   0   0   0   6  12   0  41   0  12    17    0    0   1.787     63  0.67
+   53   58     0   0   0   0   0   0   0   0  88   0  12   0   0   0   0   0   0   0   0   0    17    0    0   0.362     13  1.34
+   54   59     0   0   0   0   0   0   0   0   6   0  41  12   0   0   6  35   0   0   0   0    17    0    0   1.318     47  0.85
+   55   60     0   0   0   0   6   0   0   0  18   0   0   0   0   6   0  12   6  24   6  24    17    0    0   1.905     67  0.73
+   56   61     0   0   0  12  65   0   0   0   6   0   0   0   0   0  12   0   0   6   0   0    17    0    0   1.119     39  1.05
+   57   62     6  29   0  12   0   0   0   0   6   0   6  29   0   0   0   0   0   0  12   0    17    0    0   1.723     61  0.71
+   58   63     0   0   6   0   0   0   0   0   6   0   0   0   0   0   6  76   0   6   0   0    17    0    0   0.872     31  1.23
+   59   64     0   0   0   0   0   0   0   6   0   0  18   0   0   0  12  41   0  12  12   0    17    0    0   1.593     56  0.91
+   60   65     0  41   6  24   0   0   6   0   0   0   0   0   0  12   0   0   6   6   0   0    17    0    0   1.624     57  0.83
+   61   66    53  24   6   0   0   0   0   0   0   0   0  12   6   0   0   0   0   0   0   0    17    0    0   1.262     45  1.19
+   62   67     7  27   0   0   7   0   0   0  13   0   0  13   0   0   0   7   0  13   0  13    15    2    0   1.969     73  0.67
+   63   68     0   0   0   0   0   0   0  44   0   0   0   0   0   0   6   0   6   0  44   0    16    1    0   1.070     39  0.91
+   64   69     0   0   0   0   0   0   0   0  18   0  18   0   0   9   9  45   0   0   0   0    11    6    0   1.414     59  0.68
+   65   70     0   0   0   0   0   0   0  13   0   0   0  19   6   6   6  31  13   0   0   6    16    1    0   1.890     68  0.71
+   66   71    31   6   0   0   0   0   0   0   0   0  13   6   0   0   6  38   0   0   0   0    16    1    0   1.511     55  0.71
+   67   72    38  19  19   0   0   0   0   0   0   0   0  25   0   0   0   0   0   0   0   0    16    1    0   1.342     48  0.89
+   68   73    29   6   6   0   0   0   0   0   0   0   0  12   0   0  12   0  18  18   0   0    17    0    0   1.809     64  0.67
+   69   74    24  41   6   0   0   0   6   0   0   0   0  12   0   6   0   0   0   0   0   6    17    0    0   1.624     57  0.95
+   70   75     6   6   6   0  12   0  12   0   0   0   0   0   0   0   0   0   6  47   0   6    17    0    0   1.692     60  0.68
+   71   76     0   6   6   0  41   0  24   0   0   0   0   0   0   0   0   6   0   6   0  12    17    0    0   1.624     57  0.82
+   72   77     0   6   0   0   0   0   0   0   0   0   6   0   0   0   0   0  12  12   6  59    17    0    0   1.316     46  1.08
+   73   78     6   0   6   0   0   0   0   0   0   6   6   0   0   0  19  31   6  13   0   6    16    1    0   1.977     71  0.73
+   74   79    10   0  10   0   0   0   0  50  20   0   0   0   0   0   0   0  10   0   0   0    10    7    0   1.359     59  0.67
+   75   80     0   0   0   0   0   0   0   8   0  15   0   0   0   0   8   8  31  15   0  15    13    4    1   1.818     71  0.80
+   76   81     0   0   0   0   0   0   0   0   0   8   8   0   0   0  54  23   0   8   0   0    13    4    0   1.264     49  0.81
+   77   82     0   0   0   7   0   0   0   0   0   0   0  29   0   7  14  36   0   7   0   0    14    3    0   1.569     59  0.78
+   78   83     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 100    17    0    0   0.000      0  1.57
+   79   84     0   0   0   0   0   0   0   0   0   0   0   0   0   0  35  59   0   0   6   0    17    0    0   0.846     30  1.31
+   80   85     0   0   0   0   0   0  88   0   0   0   0   0   0   0   0   0   0   0  12   0    17    0    0   0.362     13  1.26
+   81   86     0   0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   0   0    17    0    0   0.000      0  1.57
+   82   87     0   0   0   0   0   0   0   0   0   0   0   0   0   0  94   0   0   0   6   0    17    0    0   0.224      8  1.36
+   83   88     6  24   6   6   6   0  12  12   0   0   6  18   0   0   0   6   0   0   0   0    17    0    0   2.150     76  0.67
+   84   89    12  88   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0    17    0    0   0.362     13  1.47
+   85   90     6   0   0   0   0   0   0  29  65   0   0   0   0   0   0   0   0   0   0   0    17    0    0   0.808     29  1.25
+   86   91     6   0   0   0   0   0  71   0   0   0   0   6   0   0   0   0  12   0   0   6    17    0    0   0.998     35  1.06
+   87   92    59  12  24   6   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0    17    0    0   1.071     38  1.29
+   88   93     0   0   0   0  12  24  65   0   0   0   0   0   0   0   0   0   0   0   0   0    17    0    0   0.874     31  1.45
+   89   94    29  24  12   0   0   0   0   0  24   0   0   0  12   0   0   0   0   0   0   0    17    0    2   1.544     55  0.82
+   90   95     0   0   0   0   0   0   0  12   0   0   6   0   0   0   0   0   0   0  35  47    17    0    0   1.141     40  1.04
+   91   96     0   0   0   6   0   0   0  65   0   6   0   0   0   0   0   6   0   6   6   6    17    0    1   1.282     45  0.97
+   92   97     6   0   6  12   0   0   0   0   0   0   6  12   0   0   0  29   6  18   0   6    17    0    2   2.003     71  0.67
+   93   98     0   6   0  29   6   0   0   0   0   0  12   0   0   6   0   0   0   0  29  12    17    0    1   1.723     61  0.67
+   94   99    47  18  18   0  18   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0    17    0    0   1.273     45  1.11
+   95  100     0   0   0   0   0   0   0   0   0   0   6   0   0   0   0   0  18   0  76   0    17    0    0   0.678     24  1.23
+   96  101     6   6   0   0   0   0   0   0  18   0   0   0   0   0   6   0  12  53   0   0    17    0    0   1.395     49  0.96
+   97  102     0  12   0   0  12   0   0   0  24   0   0  12   0   0   0  18   0  24   0   0    17    0    0   1.742     61  0.67
+   98  103     0  71   0  29   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0    17    0    0   0.606     21  1.51
+   99  104    47  29   6   0   0   0   0   0  18   0   0   0   0   0   0   0   0   0   0   0    17    0    0   1.187     42  1.08
+  100  105     0   0   0   0   0   0   0   0   0   0   0   0   0   6  29  59   0   6   0   0    17    0    0   1.005     35  1.12
+  101  106     0   0   0  12   0   0   6   0  12   0   6   0   0   0   6   6  18  29   6   0    17    0    0   2.003     71  0.67
+  102  107     0   0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   0   0    17    0    0   0.000      0  1.57
+  103  108     0  59   0   6   6   0  18   0  12   0   0   0   0   0   0   0   0   0   0   0    17    0    0   1.203     42  0.99
+  104  109     0   0   0   0   0   0   0   6  94   0   0   0   0   0   0   0   0   0   0   0    17    0    0   0.224      8  1.50
+  105  110     0   0   6   0   6  24   0   0   0   0   6   0   0   0  41  12   0   6   0   0    17    0    0   1.624     57  1.02
+  106  111    65   6   6   0   0   0   0   0  18   0   0   0   0   6   0   0   0   0   0   0    17    0    0   1.088     38  1.15
+  107  112     0   0   0   7  13   0  27   0  33   0   0   0   0   7   0  13   0   0   0   0    15    2    0   1.617     60  0.67
+  108  113     0   0   0   0  25   0  50   0   0   0   0   6   0   0   6   0   0  13   0   0    16    1    0   1.300     47  0.93
+  109  114    29   0  21   0   7   0   0   0   7   0   0   7   0   0   0   0  14  14   0   0    14    3    0   1.810     69  0.67
+  110  115     0   0   6   0   6   0  63   0   6   0   0   0   0   6   0  13   0   0   0   0    16    0    0   1.247     45  0.78
+  111  116     0   0   6   0   0   0   0   6   0  13   0   0   0   0  13  19   0  19  19   6    16    0    0   1.981     71  0.78
+  112  117     0   0   0   0  13   0   0   0   0  50   6  13   0   0  13   6   0   0   0   0    16    0    0   1.473     53  0.70
+  113  118     0   0   0   0   0   0   0   0   6   0   6   0   0   0   6   0   6   6  50  19    16    0    0   1.527     55  1.08
+  114  119     7   0   0   0   7   0   7   7   7  13   0  20   0   0   0  13   0   0  13   7    15    1    0   2.211     82  0.68
+  115  120    14   0  14   0   0   0   0   0   0   0   0  21   0   0   0  36   0   7   0   7    14    2    0   1.631     62  0.68
+  116  121     0  15   0   0   0   0  38   0   0   8   0   0   0  23   0  15   0   0   0   0    13    3    0   1.479     58  0.68
+  117  122     0  15  15   0   0   0   8   0   0   0   0   0   0   0   8   8   8  38   0   0    13    3    0   1.733     68  0.68
+  118  123     0   0   9   0   0   0   0   0   0  18   0   0   0   0   0   9  18   9   9  27    11    5    0   1.846     77  0.70
+  119  124     0   9   0   0   0   0   0   0   9   0   0   0   0  18   9   0  27  27   0   0    11    5    0   1.673     70  0.68
+  120  125     0  44  13  13  19   0  13   0   0   0   0   0   0   0   0   0   0   0   0   0    16    0    0   1.455     52  1.20
+  121  126     0  25   0   0   0   0   0   6   0  13  19   0   0   0  19   6   0  13   0   0    16    0    0   1.841     66  0.68
+  122  127    13   6   0   0   0   0   0   0   0   0   6   0   0   0   6  31  13  19   6   0    16    0    0   1.890     68  0.72
+  123  128     6  31   0   0   0   6   0   0  31   0  13   0   0   0   0   0   0   0   0  13    16    0    0   1.593     57  0.68
+  124  129     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0  31  69   0   0    16    0    0   0.621     22  1.31
+  125  130     0   0   0   0   0   0   0   0  13   0   0   0   0   0   6  19  19  13  19  13    16    0    0   1.895     68  0.81
+  126  131     0   0   0   0   0   0   0   0   0   0   0   0   0   0   0  13  19  63   0   6    16    0    0   1.041     38  1.21
+  127  132     0   0   0   0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   0    16    0    0   0.000      0  1.58
+  128  133     0   0   0   0   0   0   6   0   0   0   0   0   0   0  38  44  13   0   0   0    16    0    0   1.163     42  1.09
+  129  134     0   0   0   0   0   0   0   6   6   0  13   0   0   0   0  50  13  13   0   0    16    0    0   1.473     53  1.00
+  130  135     0   6   0   0   0   0   0   0  19   0   0   0   0   0  13  13  13  19   6  13    16    0    0   2.014     73  0.74
+  131  136     0   0   0   0   0   0   0   0   0   0   0   0   0   0  38  56   6   0   0   0    16    0    0   0.865     31  1.25
+  132  137    19  38   0   0   0   0   0   0   6   0   0   0   0   0  19  13   6   0   0   0    16    0    0   1.602     58  0.73
+  133  138     0   0   0   0   0   0   0  44   0   0  13   0   0   0   0   0   0   0  44   0    16    0    0   0.983     35  1.16
+  134  139     6  44  44   0   6   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0    16    0    0   1.070     39  1.27
+  135  140     0   0   0   0   0 100   0   0   0   0   0   0   0   0   0   0   0   0   0   0    16    0    0   0.000      0  1.58
+  136  141     0   0   0   0   0   0   0   0  13   0  73   0   0   0   0   0   0   7   7   0    15    0    0   0.857     32  1.15
+## INSERTION LIST
+ AliNo  IPOS  JPOS   Len Sequence
+     8    22    50     1 lDd
+     8    40    69    12 eEGLMRPGEYPGIh
+     8    75   115     1 qGr
+     9    43    94    16 nNPYEYYLLNGTPITDTk
+     9    92   159     4 sNNLIn
+    10    22    49     1 lSn
+    10    40    68    12 eEDLMRPGEYPGIh
+    11    89    96     1 aPd
+    12    89    96     1 aPd
+    13    45   569     6 gGVSTGAa
+    13    92   618     7 dGNTSRAIn
+    14    26    43     2 sRFi
+    14    45    64    13 gMGQAKWFYGGIRTv
+    14    91   121     3 eYRNk
+    15    93   211     9 lASRPPQPRNv
+    16    26   168    57 dPREASNLPKSVKVAAQERAKARAVRDYVKADALQKNIVDAGYRVLSGPNNEDILARKy
+//

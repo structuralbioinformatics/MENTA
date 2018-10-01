@@ -211,7 +211,7 @@ int    *n_set,**set,*id_set;
     else if (check[0]!='\n'){ 
                         ns=strlen(buffer);
                         if (np==0) {length[ii-1] += ns-1;}
-                        if (length[ii-1]>=MAXS) nrerror("Too large sequence, change MAXS");
+                        if (length[ii-1]>=MAXS) {sprintf(error_size,"Too large sequence, change MAXS > %d",length[ii-1]);nrerror(error_size);}
                         strncat(seq[np][ii-1],buffer,ns-1);}
   }
   close(INP);
