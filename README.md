@@ -92,18 +92,31 @@ echo " 0.10          ../matrix/blosum.dat" >> matrix.data
 echo " 0.10          ../matrix/pam.dat"    >> matrix.data
 
 echo " 14.0" > input_method_WJ.dat
+
 echo " 14.0" >> input_method_WJ.dat
+
 echo " 14.0" >> input_method_WJ.dat
+
 echo " 14.0" >> input_method_WJ.dat
+
 echo "  0.0" >> input_method_WJ.dat
+
 echo "  0.0" >> input_method_WJ.dat
+
 echo "  0.0" >> input_method_WJ.dat
+
 echo "  0.0" >> input_method_WJ.dat
+
 echo " 14.0" >> input_method_WJ.dat
+
 echo "  0.0" >> input_method_WJ.dat
+
 echo " 14.0" >> input_method_WJ.dat
+
 echo "  0.0" >> input_method_WJ.dat
+
 echo " 14.0" >> input_method_WJ.dat
+
 
 
 ../bin/menta -i iMotif.menta -w matrix.data -wj input_method_WJ.dat -n 10  -fmt 10 -j 0 -s -100.0 -id 0.3 -homo 0.9 -gid 0.5 -ghom 0.9 -cluster 20 -l -evd 1 -op 4  -o test_iMotif.out > test_iMotif.log
