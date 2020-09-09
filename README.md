@@ -84,12 +84,18 @@ SABLE/run.sable faf1.fa
 perl ../perl/SABLE2Menta.pl -i faf1.faSABLE.out -f faf1 -m ../matrix/Mizuguchi.dat  -o faf1
 
 cat src8.menta > iMotif.menta
+
 cat ubx8.menta >> iMotif.menta
+
 cat faf1.menta >> iMotif.menta
 
+
 echo " 0.80          ../matrix/blosumG.dat" > matrix.data
+
 echo " 0.10          ../matrix/blosum.dat" >> matrix.data
+
 echo " 0.10          ../matrix/pam.dat"    >> matrix.data
+
 
 echo " 14.0" > input_method_WJ.dat
 
