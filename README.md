@@ -77,11 +77,17 @@ We assume you have installed SABLE and the program runs as run.sable.
 The output of SABLE is "input_fasa"+SABLE.out (i.e run.sable src8.fa produces src8.faSABLE.out)
 
 SABLE/run.sable src8.fa  
+
 perl ../perl/SABLE2Menta.pl -i src8.faSABLE.out -f src8 -m ../matrix/Mizuguchi.dat  -o src8
+
 SABLE/run.sable ubx8.fa
+
 perl ../perl/SABLE2Menta.pl -i ubx8.faSABLE.out -f ubx8 -m ../matrix/Mizuguchi.dat  -o ubx8
+
 SABLE/run.sable faf1.fa
+
 perl ../perl/SABLE2Menta.pl -i faf1.faSABLE.out -f faf1 -m ../matrix/Mizuguchi.dat  -o faf1
+
 
 cat src8.menta > iMotif.menta
 
